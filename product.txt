@@ -1,0 +1,180 @@
+1개씩 더 만들기
+Product Type: Digital
+Product Name: Netflix Membership
+Product Description: Stream TV shows and movies without ads
+Product quantity available: 13
+Product Price: 7.17
+
+Product Type: Digital
+Product Name: App Store Gift Card
+Product Description: Buy apps, games, music and so on from the App Store
+Product quantity available: 17
+Product Price: 45.36
+
+Product Type: Digital
+Product Name: Steam Game Key
+Product Description: Redeem game keys for games on the Steam
+Product quantity available: 42
+Product Price: 39.63
+
+Product Type: Digital
+Product Name: Adobe Creative Cloud
+Product Description: Access all creative apps from Adobe, including Photoshop, Illustrator, InDesign, and cloud storage
+Product quantity available: 80
+Product Price: 43.26
+
+Product Type: Digital
+Product Name: Spotify Premium Subscription
+Product Description: Access unlimited skips and offline playback to listen to music without ads
+Product quantity available: 87
+Product Price: 6.33
+
+Product Type: Digital
+Product Name: Google Play Gift Card
+Product Description: Used to purchase apps, games, movies, and music from the Google Play Store
+Product quantity available: 61
+Product Price: 18.33
+
+Product Type: Digital
+Product Name: Microsoft Office 365
+Product Description:  Can access all Microsoft Office programs, including Word, Excel, and PowerPoint.
+Product quantity available: 59
+Product Price: 29.37
+
+Product Type: Physical
+Product Name: iPhone 13
+Product Description: Smartphone with digital camera and touchscreen interface
+Product quantity available: 97
+Product Price: 836.42
+
+Product Type: Physical
+Product Name: PlayStation 5
+Product Description: A gaming console with fast load times, immersive 3D audio and stunning graphics
+Product quantity available: 51
+Product Price: 749.46
+
+Product Type: Physical
+Product Name: Bose QuietComfort 35 Wireless Headphones
+Product Description: Headphones with a comfortable design, long battery life and clear sound quality
+Product quantity available:  99
+Product Price: 245.57
+
+Product Type: Physical
+Product Name: Nike Air Max 2090 Sneakers
+Product Description: A modern design, responsive cushioning and a durable sneaker
+Product quantity available: 93
+Product Price: 846.25
+
+Product Type: Physical
+Product Name: Apple Watch Ultra
+Product Description: A wearable smart watch that allows users to perform various tasks
+Product quantity available: 28
+Product Price: 614.35
+
+Product Type: Physical
+Product Name: JBL Charge 5 Portable Bluetooth Speaker
+Product Description: 
+Product quantity available: 85
+Product Price: 798.31
+
+Product Type: Physical
+Product Name: JBL Charge 5 Portable Bluetooth Speaker
+Product Description: Philips Airfryer XXL
+Product quantity available: 23
+Product Price: 82.35
+
+Product Type: Gift
+Product Name: Wine Glasses
+Product Description: Elegant wine glasses with custom prints
+Product quantity available: 29
+Product Price: 51.32
+
+Product Type: Gift
+Product Name: Coffee Box
+Product Description: Deliver tasting notes and brewing tips along with coffee beans
+Product quantity available: 83
+Product Price: 94.13
+
+Product Type: Gift
+Product Name: Candle Making Kit
+Product Description: Gifts with supplies needed to make custom scented candles at home
+Product quantity available: 73
+Product Price: 40.61
+
+Product Type: Gift
+Product Name: Chocolate Basket
+Product Description: Luxury chocolates and snacks from a famous chocolate maker
+Product quantity available: 57
+Product Price: 64.12
+
+Product Type: Gift
+Product Name: Spa Set
+Product Description: Bathing and body products such as body wash, lotion, and candles
+Product quantity available: 50
+Product Price: 46.07
+
+Product Type: Gift
+Product Name: Monthly Beauty Subscription
+Product Description: Monthly subscription offering beauty and grooming products
+Product quantity available: 69
+Product Price: 143.92
+
+Product Type: Gift
+Product Name: Beef Gift Set
+Product Description: A gift to a friend or loved one with our premium steak.
+Product quantity available: 4
+Product Price: 76.58
+
+Product Type: Tax
+Product Name: tax-free
+Product Description: Purchased at a price not including tax at the time of import
+Product quantity available: 44
+Product Price: 0%
+
+Product Type: Tax
+Product Name: normal tax
+Product Description: general case
+Product quantity available: 15
+Product Price: 10%
+
+Product Type: Tax
+Product Name: luxury tax
+Product Description: Applied to jewelry, clothing and footwear made of fur or leather
+Product quantity available: 13
+Product Price: 20%
+
+Product Type: Coupon
+Product Name: Discount 5% Off
+Product Description: 5% discount
+Product quantity available: 54
+Product Price: -5%
+
+Product Type: Coupon
+Product Name: Discount 10% Off
+Product Description: 10% discount
+Product quantity available: 31
+Product Price: -10%
+
+Product Type: Coupon
+Product Name: Discount 20% Off
+Product Description: 20% discount
+Product quantity available: 74
+Product Price: -20%
+
+Product Type: Coupon
+Product Name: Discount 30% Off
+Product Description: 30% discount
+Product quantity available: 67
+Product Price: -30%
+
+Product Type: Coupon
+Product Name: Discount 40% Off
+Product Description: 40% discount
+Product quantity available: 8
+Product Price: -40%
+
+Product Type: Coupon
+Product Name: Discount 50% Off
+Product Description: 50% discount
+Product quantity available: 3
+Product Price: -50%

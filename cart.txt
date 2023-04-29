@@ -1,0 +1,21 @@
+Cart ID: 001
+Product 1: Netflix Membership - Quantity: 2
+product 2: Discount 5% Off - Quantity: 1
+
+Cart ID: 002
+Product 1: Nike Air Max 2090 Sneakers - Quantity: 1
+Product 2: luxury tax - Quantity: 1
+
+Cart ID: 003
+Product 1: JBL Charge 5 Portable Bluetooth Speaker - Quantity: 1
+
+Cart ID: 004
+Product 1: Candle Making Kit - Quantity: 3
+product 2: Coffee Box - Quantity: 3
+Product 3: Discount 15% Off - Quantity: 1
+Product Gift Message: Happy Birthday!
+
+Cart ID: 005
+Product 1: iPhone 13 - Quantity: 1
+Product 2: Apple Watch Ultra - Quantity: 1
+Product 3: normal tax - Quantity: 1
