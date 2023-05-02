@@ -1,4 +1,3 @@
-1개씩 더 만들기
 Product Type: Digital
 Product Name: Netflix Membership
 Product Description: Stream TV shows and movies without ads
