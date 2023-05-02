@@ -83,26 +83,32 @@ public class Main
 
 
 
-        List<Product> productlist = new ArrayList<>();
+        List<Product> Productlist = new ArrayList<>(); // the list that will only contains products
+        List<Coupon> Couponlist = new ArrayList<>(); // the list that will only contains coupon
+
         try {
             String FileContent = Files.readString(Paths.get("../assignment1/src/main/java/assignment1/product.txt"));
-            String[] currentProduct = FileContent.split("\\r?\\n\\r?\\n");
+            // read everything inside the file
+
+            String[] currentProduct = FileContent.split("\\r?\\n\\r?\\n"); // this will split up between items from the list
+                                                                                // (the empty line) (2 times spacing)
 
             // productlist = Files.lines(Paths.get("../assignment1/src/main/java/assignment1/product.txt"))
-            productlist = Arrays.stream(currentProduct)
+            Productlist = Arrays.stream(currentProduct)
             .map(line -> {
-                String[] catandval = line.split("\\r?\\n");
-                String type = catandval[0].split(":")[1].trim();
+                String[] catandval = line.split("\\r?\\n"); // this will seperate each line of each item as an element inside the list
+                String type = catandval[0].split(":")[1].trim(); // taking each line and split them between its category and its value
                 String name = catandval[1].split(":")[1].trim();
                 String description = catandval[2].split(":")[1].trim();
                 int available = Integer.parseInt(catandval[3].split(":")[1].trim());
-                double price = Double.parseDouble(catandval[4].split(":")[1].trim().replace("%", ""));
+                double price = Double.parseDouble(catandval[4].split(":")[1].trim().replace("%", "")); // avoid "%" of the coupon
                 return new Product(type, name, description, available, price);
             })
-            .filter(product -> product.getType().equals("Physical") || product.getType().equals("Digital"))
+            .filter(product -> product.getType().equals("Physical") || product.getType().equals("Digital")) // filtering the product
             .collect(Collectors.toList());
-            System.out.println(productlist);
-
+            // System.out.println(FileContent);
+            // System.out.println(currentProduct);
+            // System.out.println(Productlist);
 
         } catch (IOException e) {
             e.printStackTrace();
