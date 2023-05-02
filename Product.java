@@ -1,62 +1,83 @@
-public abstract class Product {
+package assignment1;
+
+import java.util.Scanner;
+
+
+public class Product{
+    private String type;
     private String name;
     private String description;
-    private int quantity;
+    private int available;
     private double price;
-    private boolean canBeGifted;
-    private TaxType taxType;
 
-    public Product(String name, String description, int quantity, double price, boolean canBeGifted, TaxType taxType) {
-        this.name = name;
+    public Product(String type, String name, String description, int available, double price) {
+        this.type = type;
+        this.name = name; 
         this.description = description;
-        this.quantity = quantity;
+        this.available = available;
         this.price = price;
-        this.canBeGifted = canBeGifted;
-        this.taxType = taxType;
     }
 
+    public Product(String name) {
+        this.name = name;
+        String description = getDescription();
+    }
+
+    public String getType() {
+        return type;
+    }
     public String getName() {
         return name;
     }
-
     public String getDescription() {
         return description;
     }
-
-    public int getQuantity() {
-        return quantity;
-    }
-
+    public int getAvailable() {
+        return available;
+    } 
     public double getPrice() {
         return price;
     }
-
-    public boolean canBeGifted() {
-        return canBeGifted;
+    public void setPrice(double price) {
+        this.price = price;
     }
 
-    public TaxType getTaxType() {
-        return taxType;
+    @Override
+    public String toString() {
+        return this.name;
     }
 
-    public abstract String toString();
+}
 
-    public double getTaxAmount() {
-        switch (taxType) {
-            case TAX_FREE:
-                return 0;
-            case NORMAL_TAX:
-                return price * 0.1;
-            case LUXURY_TAX:
-                return price * 0.2;
-            default:
-                return 0;
-        }
+class PhysicalProduct extends Product {
+    private double weight;
+
+    public PhysicalProduct(String name, String description, int available, double price, double weight) {
+        super(name, description, available, price);
+        this.weight = weight;
+    }
+
+    @Override
+    public String toString() {
+        Product currentProduct = new Product(getName());
+        return "PHYSICAL - " + currentProduct.getName();
     }
 }
 
-enum TaxType {
-    TAX_FREE,
-    NORMAL_TAX,
-    LUXURY_TAX
+class DigitalProduct extends Product {
+
+
+
+    public DigitalProduct(String name, String description, int available, double price) {
+        super(name, description, available, price);
+        //TODO Auto-generated constructor stub
+    }
+
+    @Override
+    public String toString() {
+        Product currentProduct = new Product(getName());
+        return "DIGITAL - " + currentProduct.getName();
+    }
 }
+
+
