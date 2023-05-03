@@ -3,126 +3,152 @@ Name: Netflix Membership
 Description: Stream TV shows and movies without ads
 Quantity available: 13
 Price: 7.17
+Gift: True
 
 Type: Digital
-Name: App Store Gift Card
+Name: App Store Card
 Description: Buy apps, games, music and so on from the App Store
 Quantity available: 17
 Price: 45.36
+Gift: False
 
 Type: Digital
 Name: Steam Game Key
 Description: Redeem game keys for games on the Steam
 Quantity available: 42
 Price: 39.63
+Gift: True
 
 Type: Digital
 Name: Adobe Creative Cloud
 Description: Access all creative apps from Adobe, including Photoshop, Illustrator, InDesign, and cloud storage
 Quantity available: 80
 Price: 43.26
+Gift: False
 
 Type: Digital
 Name: Spotify Premium Subscription
 Description: Access unlimited skips and offline playback to listen to music without ads
 Quantity available: 87
 Price: 6.33
+Gift: True
 
 Type: Digital
-Name: Google Play Gift Card
+Name: Google Play Card
 Description: Used to purchase apps, games, movies, and music from the Google Play Store
 Quantity available: 61
 Price: 18.33
+Gift: True
 
 Type: Digital
 Name: Microsoft Office 365
 Description:  Can access all Microsoft Office programs, including Word, Excel, and PowerPoint.
 Quantity available: 59
 Price: 29.37
+Gift: True
+
+Type: Digital
+Name: Monthly Beauty Subscription
+Description: Monthly subscription offering beauty and grooming products
+Quantity available: 69
+Price: 143.92
+Gift: False
 
 Type: Physical
 Name: iPhone 13
 Description: Smartphone with digital camera and touchscreen interface
 Quantity available: 97
 Price: 836.42
+Gift: True
+Weight: 2.4
 
 Type: Physical
 Name: PlayStation 5
 Description: A gaming console with fast load times, immersive 3D audio and stunning graphics
 Quantity available: 51
 Price: 749.46
+Gift: True
+Weight: 10
 
 Type: Physical
 Name: Bose QuietComfort 35 Wireless Headphones
 Description: Headphones with a comfortable design, long battery life and clear sound quality
 Quantity available:  99
 Price: 245.57
+Gift: False
+Weight: 1.2
 
 Type: Physical
 Name: Nike Air Max 2090 Sneakers
 Description: A modern design, responsive cushioning and a durable sneaker
 Quantity available: 93
 Price: 846.25
+Gift: True
+Weight: 3.2
 
 Type: Physical
 Name: Apple Watch Ultra
 Description: A wearable smart watch that allows users to perform various tasks
 Quantity available: 28
 Price: 614.35
+Gift: True
+Weight: 0.4
 
 Type: Physical
 Name: JBL Charge 5 Portable Bluetooth Speaker
 Description: 
 Quantity available: 85
 Price: 798.31
+Gift: False
+Weight: 3
 
 Type: Physical
-Name: JBL Charge 5 Portable Bluetooth Speaker
-Description: Philips Airfryer XXL
-Quantity available: 23
-Price: 82.35
-
-Type: Gift
 Name: Wine Glasses
 Description: Elegant wine glasses with custom prints
 Quantity available: 29
 Price: 51.32
+Gift: True
+Weight: 6.4
 
-Type: Gift
+Type: Physical
 Name: Coffee Box
 Description: Deliver tasting notes and brewing tips along with coffee beans
 Quantity available: 83
 Price: 94.13
+Gift: False
+Weight: 4.2
 
-Type: Gift
+Type: Physical
 Name: Candle Making Kit
 Description: Gifts with supplies needed to make custom scented candles at home
 Quantity available: 73
 Price: 40.61
+Gift: True
+Weight: 3.1
 
-Type: Gift
+Type: Physical
 Name: Chocolate Basket
 Description: Luxury chocolates and snacks from a famous chocolate maker
 Quantity available: 57
 Price: 64.12
+Gift: True
+Weight: 1.7
 
-Type: Gift
+Type: Physical
 Name: Spa Set
 Description: Bathing and body products such as body wash, lotion, and candles
 Quantity available: 50
 Price: 46.07
+Gift: False
+Weight: 4
 
-Type: Gift
-Name: Monthly Beauty Subscription
-Description: Monthly subscription offering beauty and grooming products
-Quantity available: 69
-Price: 143.92
-
-Type: Gift
-Name: Beef Gift Set
+Type: Physical
+Name: Beef Set
 Description: A gift to a friend or loved one with our premium steak.
 Quantity available: 4
 Price: 76.58
+Gift: True
+Weight: 8.6
 
 Type: Tax
 Name: Tax-free

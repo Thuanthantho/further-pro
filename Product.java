@@ -1,21 +1,20 @@
 package assignment1;
 
-import java.util.Scanner;
-
-
 public class Product{
     private String type;
     private String name;
     private String description;
     private int available;
     private double price;
+    private boolean CanBeGifted;
 
-    public Product(String type, String name, String description, int available, double price) {
+    public Product(String type, String name, String description, int available, double price, boolean CanBeGifted) {
         this.type = type;
         this.name = name; 
         this.description = description;
         this.available = available;
         this.price = price;
+        this.CanBeGifted = CanBeGifted;
     }
 
     public Product(String name) {
@@ -41,6 +40,9 @@ public class Product{
     public void setPrice(double price) {
         this.price = price;
     }
+    public boolean isCanBeGifted() {
+        return CanBeGifted;
+    }
 
     @Override
     public String toString() {
@@ -52,32 +54,35 @@ public class Product{
 class PhysicalProduct extends Product {
     private double weight;
 
-    public PhysicalProduct(String name, String description, int available, double price, double weight) {
-        super(name, description, available, price);
+    public PhysicalProduct(String type, String name, String description, int available, double price, boolean CanBeGifted ,double weight) {
+        super(type, name, description, available, price, CanBeGifted);
         this.weight = weight;
+    }
+
+    public double getWeight() {
+        return weight;
     }
 
     @Override
     public String toString() {
-        Product currentProduct = new Product(getName());
-        return "PHYSICAL - " + currentProduct.getName();
+        return "PHYSICAL - " + this.getName();
     }
+
 }
 
 class DigitalProduct extends Product {
 
 
 
-    public DigitalProduct(String name, String description, int available, double price) {
-        super(name, description, available, price);
-        //TODO Auto-generated constructor stub
+    public DigitalProduct(String type, String name, String description, int available, double price, boolean CanBeGifted) {
+        super(type, name, description, available, price, CanBeGifted);
     }
 
     @Override
     public String toString() {
-        Product currentProduct = new Product(getName());
-        return "DIGITAL - " + currentProduct.getName();
+        return "DIGITAL - " + this.getName();
     }
 }
+
 
 
