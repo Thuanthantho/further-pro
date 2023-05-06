@@ -17,7 +17,22 @@ public class Main
         String filePath = "../assignment1/src/main/java/assignment1/product.txt";
         List<Product> productList = getProductList(filePath); // the list that will only contains products
         List<Coupon> couponList = getCouponList(filePath);
-        List<TaxType> taxList = getTaxList(filePath);
+        // List<TaxType> taxList = getTaxList(filePath);
+
+        // ProductItem test = new ProductItem("test");
+        // System.out.println(test.getMessage());
+        // test.GiftMessage(test);
+        // System.out.println(test.getMessage());
+
+        Coupon test = new Coupon();
+        test.applyProductCoupon(couponList);
+
+        Coupon test1 = new Coupon();
+        test1.applyShippingCoupon(couponList);
+
+        // for (Product item : productList) {
+        //     System.out.println(item);
+        // }
     }
 
     public static List<Product> getProductList(String filePath) throws IOException{
@@ -28,6 +43,8 @@ public class Main
                                                                                 // (the empty line) (2 times spacing)
 
             tempproductList = Arrays.stream(currentProduct)
+            .filter(line -> !line.isEmpty())
+            .filter(line -> line.startsWith("Type: Digital") || line.startsWith("Type: Physical"))
             .map(line -> {
                 String[] catandval = line.split("\\r?\\n"); // this will seperate each line of each item as an element inside the list into an array
                 String type = catandval[0].split(":")[1].trim(); // taking each line and split them between its category and its value
@@ -50,7 +67,8 @@ public class Main
                 } 
                 return new Product(type, name, description, available, price, CanBeGifted);
             })
-            .filter(product -> product.getType().equals("Physical") || product.getType().equals("Digital")) // filtering the product // careful of unrecognized product type 
+            // .filter(product -> product.getType().equals("Physical") || product.getType().equals("Digital")) 
+            // filtering the product // careful of unrecognized product type 
             .collect(Collectors.toList());
             // productList.addAll(tempproductList);
         } catch (IOException e) {
@@ -74,11 +92,11 @@ public class Main
                 int quantity = Integer.parseInt(catandval[3].split(":")[1].trim());
                 String price = catandval[3].split(":")[1].trim();
                 if (price.contains("%")) {
-                    double percentDiscount = Double.parseDouble(catandval[3].split(":")[1].trim().replace("%", "")) / 100;
-                    return new Coupon(CouponName, description, quantity, 0, percentDiscount);
+                    double discount = Double.parseDouble(catandval[3].split(":")[1].trim().replace("%", "")) / 100;
+                    return new Coupon(CouponName, description, quantity, discount);
                 } else {
-                    double fixedDiscount = Double.parseDouble(catandval[3].split(":")[1].trim());
-                    return new Coupon(CouponName, description, quantity, fixedDiscount, 0);
+                    double discount = Double.parseDouble(catandval[3].split(":")[1].trim());
+                    return new Coupon(CouponName, description, quantity, discount);
                 }
             })
             .collect(Collectors.toList());
@@ -89,27 +107,26 @@ public class Main
     }
 
 
-    public static List<TaxType> getTaxList(String filePath) throws IOException{
-        List<TaxType> temptaxList = new ArrayList<>(); // the list that will only contains coupon
-        try {
-            String[] currentProduct = readFile(filePath).split("\\r?\\n\\r?\\n");
-            temptaxList = Arrays.stream(currentProduct)
-            .filter(line -> !line.isEmpty())
-            .filter(line -> line.startsWith("Type: Tax"))
-            .map(line -> {
-                String[] catandval = line.split("\\r?\\n");
-                String taxName = catandval[1].split(":")[1].trim();
-                String description = catandval[2].split(":")[1].trim();
-                int quantity = Integer.parseInt(catandval[3].split(":")[1].trim());
-                double percent = Double.parseDouble(catandval[3].split(":")[1].trim().replace("%", "")) / 100;
-                return new TaxType(taxName, description, quantity, percent);
-            })
-            .collect(Collectors.toList());
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return temptaxList;
-    }
+    // public static List<TaxType> getTaxList(String filePath) throws IOException{
+    //     List<TaxType> temptaxList = new ArrayList<>(); // the list that will only contains coupon
+    //     try {
+    //         String[] currentProduct = readFile(filePath).split("\\r?\\n\\r?\\n");
+    //         temptaxList = Arrays.stream(currentProduct)
+    //         .filter(line -> !line.isEmpty())
+    //         .filter(line -> line.startsWith("Type: Tax"))
+    //         .map(line -> {
+    //             String[] catandval = line.split("\\r?\\n");
+    //             String taxName = catandval[1].split(":")[1].trim();
+    //             String description = catandval[2].split(":")[1].trim();
+    //             double taxRate = Double.parseDouble(catandval[3].split(":")[1].trim().replace("%", "")) / 100;
+    //             return new TaxType(taxName, description, taxRate);
+    //         })
+    //         .collect(Collectors.toList());
+    //     } catch (IOException e) {
+    //         e.printStackTrace();
+    //     }
+    //     return temptaxList;
+    // }
 
 
 

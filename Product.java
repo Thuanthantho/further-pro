@@ -1,5 +1,6 @@
 package assignment1;
 
+
 public class Product{
     private String type;
     private String name;
@@ -44,10 +45,16 @@ public class Product{
         return CanBeGifted;
     }
 
+    public void subtract(Product name) {
+        this.available = this.available - item.getAmount();
+    }
+
     @Override
     public String toString() {
         return this.name;
     }
+
+
 
 }
 

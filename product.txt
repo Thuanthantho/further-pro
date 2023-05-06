@@ -150,24 +150,6 @@ Price: 76.58
 Gift: True
 Weight: 8.6
 
-Type: Tax
-Name: Tax-free
-Description: Purchased at a price not including tax at the time of import
-Quantity available: 44
-Price: 0%
-
-Type: Tax
-Name: Default tax
-Description: general case
-Quantity available: 15
-Price: 10%
-
-Type: Tax
-Name: Luxury tax
-Description: Applied to jewelry, clothing and footwear made of fur or leather
-Quantity available: 13
-Price: 20%
-
 Type: Coupon
 Name: Discount 5% Off
 Description: 5% discount
@@ -202,4 +184,28 @@ Type: Coupon
 Name: Discount 50% Off
 Description: 50% discount
 Quantity available: 3
+Price: 50%
+
+Type: Coupon
+Name: Discount 25$ Off
+Description: 25$ discount
+Quantity available: 10
+Price: 25
+
+Type: Coupon
+Name: Discount 10$ Off
+Description: Discount 10$ Off
+Quantity available: 67
+Price: 10
+
+Type: Coupon
+Name: Free Shipping
+Description: Free Shipping discount
+Quantity available: 100
+Price: 100%
+
+Type: Coupon
+Name: Discount 50% Shipping Fee
+Description: 50% Shipping Fee discount
+Quantity available: 50
 Price: 50%
